@@ -55,16 +55,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formbtn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbtn2.Designer.cs">
+      <DependentUpon>formbtn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formbtn3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbtn3.Designer.cs">
+      <DependentUpon>formbtn3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formmenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formmenu1.Designer.cs">
+      <DependentUpon>formmenu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formmenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formmenu2.Designer.cs">
+      <DependentUpon>formmenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formbtn1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formbtn1.Designer.cs">
+      <DependentUpon>formbtn1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbtn1.resx">
+      <DependentUpon>formbtn1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbtn2.resx">
+      <DependentUpon>formbtn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formbtn3.resx">
+      <DependentUpon>formbtn3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formmenu1.resx">
+      <DependentUpon>formmenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formmenu2.resx">
+      <DependentUpon>formmenu2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
