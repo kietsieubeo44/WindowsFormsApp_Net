@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALdJREFUSEvt
+        ldENwjAMRDMCozBCR2Ez2Khs0G4AG4Sz9USFwIot8QPqk/xh+86O0kpp/0PvfVIsiiymnbCPkXh1W40F
+        +xgMnXQI8rR+XzAGfd5QhfnhArUOijNpHZ8uSF9Q+aiYo34KMxukT1Q6KW7eLIB9g3q04O7NAtg3qH+8
+        ApXtiq5RP4WZDdI31LKPfCGt49MF6fdhfnoB8vyB0O8LYqQt/+tixT5GYnsyK6+aafNP5o/S2gO1pSwJ
+        1LzIHQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="timerMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

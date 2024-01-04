@@ -18,8 +18,7 @@ namespace WindowsFormsApp1
         formbtn1 btn1;
         formbtn2 btn2;
         formbtn3 btn3;
-
-
+     
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +42,7 @@ namespace WindowsFormsApp1
             else
             {
                 ContainerMenu.Height -= 10;
-                if (ContainerMenu.Height <= 50)
+                if (ContainerMenu.Height <= 52)
                 {
                     timerMenu.Stop();
                     menuExpand = false;
@@ -63,8 +62,8 @@ namespace WindowsFormsApp1
         {
             if (sidebarExpand)
             {
-                sidebar.Width -= 5;
-                if (sidebar.Width <= 50)
+                sidebar.Width -= 8;
+                if (sidebar.Width <= 52)
                 {
                     sidebarExpand = false;
                     sidebarTran.Stop();
@@ -78,7 +77,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                sidebar.Width += 5;
+                sidebar.Width += 8;
                 if (sidebar.Width >= 275)
                 {
                     sidebarExpand = true;
@@ -156,6 +155,11 @@ namespace WindowsFormsApp1
         {
 
             btn1 = null;
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
