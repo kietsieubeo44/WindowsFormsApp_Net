@@ -32,29 +32,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            this.btnMain = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.ContainerMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.menu = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnMenu1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnMenu2 = new System.Windows.Forms.Button();
             this.pnl3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.pnl4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
-            this.btn8 = new System.Windows.Forms.Button();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.sidebarTran = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.menu = new System.Windows.Forms.Button();
+            this.btnMenu1 = new System.Windows.Forms.Button();
+            this.btnMenu2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btnMain = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMain)).BeginInit();
             this.sidebar.SuspendLayout();
             this.panel9.SuspendLayout();
             this.ContainerMenu.SuspendLayout();
@@ -64,6 +62,7 @@
             this.pnl3.SuspendLayout();
             this.pnl4.SuspendLayout();
             this.pnl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMain)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,17 +100,6 @@
             this.nightControlBox1.Name = "nightControlBox1";
             this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
             this.nightControlBox1.TabIndex = 1;
-            // 
-            // btnMain
-            // 
-            this.btnMain.Image = global::WindowsFormsApp1.Properties.Resources.Menu_3;
-            this.btnMain.Location = new System.Drawing.Point(12, 0);
-            this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(39, 38);
-            this.btnMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnMain.TabIndex = 1;
-            this.btnMain.TabStop = false;
-            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // label1
             // 
@@ -182,6 +170,58 @@
             this.panel3.Size = new System.Drawing.Size(281, 56);
             this.panel3.TabIndex = 4;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnMenu1);
+            this.panel7.Location = new System.Drawing.Point(0, 56);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(281, 56);
+            this.panel7.TabIndex = 5;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnMenu2);
+            this.panel8.Location = new System.Drawing.Point(0, 112);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(281, 56);
+            this.panel8.TabIndex = 6;
+            // 
+            // pnl3
+            // 
+            this.pnl3.Controls.Add(this.button4);
+            this.pnl3.Location = new System.Drawing.Point(3, 114);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(281, 56);
+            this.pnl3.TabIndex = 4;
+            // 
+            // pnl4
+            // 
+            this.pnl4.Controls.Add(this.button5);
+            this.pnl4.Location = new System.Drawing.Point(3, 176);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(281, 56);
+            this.pnl4.TabIndex = 6;
+            // 
+            // pnl1
+            // 
+            this.pnl1.Controls.Add(this.btn8);
+            this.pnl1.Location = new System.Drawing.Point(3, 238);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(281, 56);
+            this.pnl1.TabIndex = 5;
+            // 
+            // timerMenu
+            // 
+            this.timerMenu.Interval = 10;
+            this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
+            // 
+            // sidebarTran
+            // 
+            this.sidebarTran.Interval = 10;
+            this.sidebarTran.Tick += new System.EventHandler(this.sidebarTran_Tick);
+            // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -199,15 +239,6 @@
             this.menu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menu.UseVisualStyleBackColor = false;
             this.menu.Click += new System.EventHandler(this.menu_Click_1);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnMenu1);
-            this.panel7.Location = new System.Drawing.Point(0, 56);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(281, 56);
-            this.panel7.TabIndex = 5;
             // 
             // btnMenu1
             // 
@@ -227,15 +258,6 @@
             this.btnMenu1.UseVisualStyleBackColor = false;
             this.btnMenu1.Click += new System.EventHandler(this.btnMenu1_Click);
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnMenu2);
-            this.panel8.Location = new System.Drawing.Point(0, 112);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(281, 56);
-            this.panel8.TabIndex = 6;
-            // 
             // btnMenu2
             // 
             this.btnMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
@@ -252,14 +274,6 @@
             this.btnMenu2.Text = "            Courses";
             this.btnMenu2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu2.UseVisualStyleBackColor = false;
-            // 
-            // pnl3
-            // 
-            this.pnl3.Controls.Add(this.button4);
-            this.pnl3.Location = new System.Drawing.Point(3, 114);
-            this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(281, 56);
-            this.pnl3.TabIndex = 4;
             // 
             // button4
             // 
@@ -278,14 +292,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // pnl4
-            // 
-            this.pnl4.Controls.Add(this.button5);
-            this.pnl4.Location = new System.Drawing.Point(3, 176);
-            this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(281, 56);
-            this.pnl4.TabIndex = 6;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -301,14 +307,6 @@
             this.button5.Text = "            Payments";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
-            // 
-            // pnl1
-            // 
-            this.pnl1.Controls.Add(this.btn8);
-            this.pnl1.Location = new System.Drawing.Point(3, 238);
-            this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(281, 56);
-            this.pnl1.TabIndex = 5;
             // 
             // btn8
             // 
@@ -327,29 +325,21 @@
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
-            // timerMenu
+            // btnMain
             // 
-            this.timerMenu.Interval = 10;
-            this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
-            // 
-            // sidebarTran
-            // 
-            this.sidebarTran.Interval = 10;
-            this.sidebarTran.Tick += new System.EventHandler(this.sidebarTran_Tick);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(275, 41);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(924, 679);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.btnMain.Image = global::WindowsFormsApp1.Properties.Resources.Menu_3;
+            this.btnMain.Location = new System.Drawing.Point(12, 0);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(39, 38);
+            this.btnMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnMain.TabIndex = 1;
+            this.btnMain.TabStop = false;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1199, 720);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -361,7 +351,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMain)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.ContainerMenu.ResumeLayout(false);
@@ -371,6 +360,7 @@
             this.pnl3.ResumeLayout(false);
             this.pnl4.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -399,7 +389,6 @@
         private System.Windows.Forms.Timer sidebarTran;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

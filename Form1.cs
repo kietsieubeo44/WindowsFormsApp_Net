@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
     {
         formmenu1 menu1;
         formmenu2 menu2;
-
+        
         formbtn1 btn1;
         formbtn2 btn2;
         formbtn3 btn3;
